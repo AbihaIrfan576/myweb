@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        html, body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(20, 19, 19, 0.8);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #1f1c1c;
+        }
+
+        .content-section {
+            padding: 4rem 0;
+            background: url('https://i0.wp.com/jaamiah.com/wp-content/uploads/2019/04/Air-University.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+            margin-top: 80px;
+        }
+
+        .content-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004a99;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .mission-section {
+            background-color: white;
+            width: 100%;
+            min-height: 60vh;
+            padding-top: 80px;
+            margin-top: 0;
+        }
+
+        .mission-title {
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .mission-text {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            max-width: 700px;
+            color: #555;
+            margin: 0 auto 30px auto;
+        }
+
+        .content-section {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .explore-button-container {
+            margin-top: 0;
+            width: 100%;
+        }
+
+        #exploreAirBtn {
+            font-size: 1.25rem;
+            padding: 1rem 0;
+            width: 100%;
+            max-width: none;
+            border-radius: 0;
+            background-color: #1f1c1c;
+        }
+
+        .mission-section .btn-primary {
+            background-color: #000;
+            border-color: #000;
+        }
+
+        .mission-section .btn-primary:hover {
+            background-color: #333;
+            border-color: #333;
+        }
+
+        /* News Section Styles */
+        .news-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .news-subtitle {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .news-card-title {
+            font-weight: bold;
+        }
+
+        .news-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .more-news-btn {
+            background-color: #1f1c1c;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        .more-news-btn:hover {
+            background-color: #333;
+        }
+        .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
+
+.btn {
+    padding: 10px 20px;  
+}
+.wider-image {
+    width: 100%;
+    max-width: 500px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the image */
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Air University</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Health Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Campus Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item">
+                        <div class="input-group rounded">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" />
+                            <span class="input-group-text border-0">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-section">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100%; text-align: center;">
+            <h1 class="display-3 fw-bolder text-center ">Air University</h1>
+        </div>
+    </div>
+    
+    <div class="explore-button-container">
+        <button class="btn btn-primary btn-lg btn-block" id="exploreAirBtn">Explore Air</button>
+    </div>
+    
+    <div class="mission-section">
+        <h2 class="mission-title row justify-content-center">A Societal Mission</h2>
+        <p class="mission-text">
+            Air University was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity; leading in pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact.
+        </p>
+        <div class="button-container">
+            <button onclick="scrollToCampusNews()" class="btn btn-primary btn-lg">Learn More</button>
+        </div>
+        
+       
+        <div id="campusNews"> </div>
+
+   
+    <h1 class="news-title text-center">Campus News</h1>
+    <p class="news-subtitle text-center">Stories about people, research, and innovation across the Farm</p>
+
+    <div class="container news-container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+            <div class="col">
+                <div class="card news-card ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQ5anhUPKy1HU3ruf207FN-8_Q7i9zEV1AA&s" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="news-card-title">HEALTH & MEDICINE</h5>
+                        <p class="card-text">Stanford launches center focused on human and planetary health.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card news-card">
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="news-card-title">BUSINESS</h5>
+                        <p class="card-text">Mapping the maze where the IRS could find billions in unpaid taxes.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col">
+                <div class="card news-card ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0O5D3GanvRekniMeAndQUyS5KWgIuBwt_ZA&s" class="card-img-top" alt="News Image 3">
+                    <div class="card-body">
+                        <h5 class="news-card-title">LAW</h5>
+                        <p class="card-text">Nate Persily’s mini museum of election history.</p>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col">
+                <div class="card news-card">
+                    <img src="https://imgcdn.pakistanpoint.com/media/2019/12/_2/800x600/pic_1577085331.jpg" class="card-img-top" alt="News Image 4">
+                    <div class="card-body">
+                        <h5 class="news-card-title">SOCIAL SCIENCES</h5>
+                        <p class="card-text">Six things political scientists are watching this election.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card news-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwL5CfdIoXFS-LGs4EMUgW95PaiVRksEmQSg&s" class="card-img-top" alt="News Image 5">
+                    <div class="card-body">
+                        <h5 class="news-card-title">EDUCATION</h5>
+                        <p class="card-text">Study reveals disparities in Brazilian schools.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card news-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUBIVBXIpt28eZmvKbRz0k0q9vDQYP8KqXg&s" class="card-img-top" alt="News Image 6">
+                    <div class="card-body">
+                        <h5 class="news-card-title">ARTS</h5>
+                        <p class="card-text">Meyer Green welcomes ‘Amulets’.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 text-center">
+        <button class="more-news-btn" id="moreNewsBtn">More campus news</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
